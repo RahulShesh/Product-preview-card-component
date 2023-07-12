@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+  .main {
+    height: 65vh;
+    width: 40vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+  }
+  .image img {
+    height: 65vh;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .details {
+    padding: 25px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0px 10px 10px 0px;
+  }
+  .perfume {
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 20px;
+  }
+  main {
+    font-family: "Fraunces";
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: hsl(212, 21%, 14%);
+  }
+  article {
+    font-family: "Montserrat";
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 20px;
+  }
+  .rate {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .rate h1 {
+    font-family: "Fraunces";
+    color: hsl(158, 36%, 37%);
+  }
+  .ratenot {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+  }
+  button {
+    height: 40px;
+    width: 210px;
+    font-family: "Montserrat";
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  button:hover {
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+  }
+@media screen and (max-width: 375px) {
+    .main{
+        padding: 20px 20px;
+        margin: 0;
+        height: 556px;
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        height: 250px;
+    }
+    .image img{
+        width:375px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+
+        }
+        button {
+            height: 40px;
+            width: 320px;
+            
+          }
+          .details {
+            border-radius: 0px 0px 10px 10px;
+          }
+    
+}
